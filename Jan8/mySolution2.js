@@ -18,9 +18,9 @@ var findRoot = function(tree) {
          tree[i].children.forEach(child => hasParent.add(child))
      }
  }
-  for(let i = 0; i < tree.length; i++) {
-      if(!hasParent.has(tree[i])) {
-          return tree[i];
+  for(let j = 0; j < tree.length; j++) {
+      if(!hasParent.has(tree[j])) {
+          return tree[j];
       }
   }
 };
